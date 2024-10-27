@@ -23,10 +23,9 @@ const SignUp = () => {
   };
 
   return (
-    <div className="signup-container">
-      <video src='videos/home_bg.mp4' autoPlay loop muted />
+    <div className="signup-container fade-in">
       <div className="signup-overlay">
-        <div className="signup-card">
+        <div className="signup-card slide-up">
           <div className="signup-header">
             <h1>Create Account</h1>
             <p>Join Blinkfinity today</p>
@@ -55,7 +54,7 @@ const SignUp = () => {
                 onChange={handleChange}
                 required
               />
-            </div>  
+            </div>
             
             <div className="form-group">
               <label htmlFor="password">Password</label>

@@ -4,14 +4,6 @@
     position: relative;
 }
 
-.signup-container video {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-}
-
 .signup-overlay {
     height: 100%;
     width: 100%;
@@ -82,6 +74,37 @@
 .signup-button {
     margin-top: 1rem;
     width: 100%;
+}
+
+/* Animation classes */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+.slide-up {
+    animation: slideUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 768px) {
