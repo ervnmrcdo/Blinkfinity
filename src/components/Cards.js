@@ -65,7 +65,7 @@ function Cards() {
   };
 
   const featuredGames = [
-    { src: 'images/rocketblink.png', text: 'Rocketblink', label: 'To The Moon!', path: '/' },
+    { src: 'images/rocketblink.png', text: 'Rocketblink', label: 'To The Moon!', path: '/rocketblink' },
     { src: 'images/rocketblink.png', text: 'ThreeCupsOneBall', label: 'Guess Wisely!', path: '/' },
     { src: 'images/rocketblink.png', text: 'Space Adventure', label: 'SpaceGame', path: '/' },
     { src: 'images/rocketblink.png', text: 'Racing Stars', label: 'RacingGame', path: '/' },

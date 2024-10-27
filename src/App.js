@@ -21,6 +21,7 @@ function App() {
             <Route path='/upload' element={<Upload />} />
             <Route path='/rocketblink' element={<Rocketblink />} />
           </Routes>
+          <Footer />
         </div>
        </Router>
     </>

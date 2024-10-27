@@ -1,12 +1,11 @@
 import React from "react";
-import Footer from "./Footer";
+import UploadSection from '../UploadSection'
 
 function Upload() {
   return (
-    <div>
-
-      <Footer />
-    </div>
+    <>
+      <UploadSection />
+    </>
   )
 }
 

@@ -35,11 +35,11 @@ function Footer() {
         <div className='social-media-wrap'>
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i className='fab fa-typo3' />
+              Blinkfinity
+              <i className='fa-solid fa-rocket' />
             </Link>
           </div>
-          <small className='website-rights'>TRVL © 2020</small>
+          <small className='website-rights'>Blinkfinity © 2024</small>
           <div className='social-icons'>
             <Link
               class='social-icon-link facebook'
