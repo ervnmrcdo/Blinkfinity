@@ -7,14 +7,15 @@ function HeroSection() {
   return (
     <div className='hero-container'>
       <h1>BLINKFINITY</h1>
-      <p>sup</p>
+      <p>the next level.</p>
       <div className="hero-btns">
         <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
           PLAY
         </Button>
 
         <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-          UPLOAD <i className='far fa-play-circle' />
+          UPLOAD 
+          {/* <i className='far fa-play-circle' /> */}
         </Button>
       </div>
     </div>
