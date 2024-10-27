@@ -55,7 +55,7 @@ const SignUp = () => {
                 onChange={handleChange}
                 required
               />
-            </div>
+            </div>  
             
             <div className="form-group">
               <label htmlFor="password">Password</label>
