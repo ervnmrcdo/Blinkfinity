@@ -1,0 +1,96 @@
+.signup-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.signup-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.signup-overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+}
+
+.signup-card {
+    width: 100%;
+    max-width: 450px;
+    padding: 2rem;
+    background-color: rgba(36, 36, 36, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.signup-header h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.signup-header p {
+    color: #b3b3b3;
+    margin-top: 0.5rem;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3b82f6;
+}
+
+.signup-button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .signup-card {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .signup-header h1 {
+        font-size: 1.75rem;
+    }
+}
