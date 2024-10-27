@@ -19,11 +19,18 @@ function Navbar() {
   };
 
   useEffect(() => {
-    showButton()
-  }, [])
+    showButton();
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };
+  }, []);
 
-  window.addEventListener('resize', showButton);
-
+  useEffect(() => {
+    window.addEventListener('resize', showButton);
+    return () => {
+      window.removeEventListener('resize', showButton);
+    };
+  }, []);
 
   return (
     <>
@@ -32,35 +39,59 @@ function Navbar() {
           <Link to="/" className="navbar-logo" onClick={closeMenu}>
             <i className='fa-solid fa-rocket' /> Blinkfinity
           </Link>
+          
+          {/* Mobile menu icon */}
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/upload' className='nav-links' onClick={closeMenu}>
-                Upload
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/games' className='nav-links' onClick={closeMenu}>
-                Games
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/sign_up' className='nav-links-mobile' onClick={closeMenu}>
-                Register
-              </Link>
-              <Link to='/sign_up' className='nav-links-mobile' onClick={closeMenu}>
-                Log In
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
-          {button && <Button >LOG IN</Button>}
+
+          {/* Mobile-only menu */}
+          <div className="mobile-menu">
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/upload' className='nav-links' onClick={closeMenu}>
+                  Upload
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link to='/games' className='nav-links' onClick={closeMenu}>
+                  Games
+                </Link>
+              </li>
+              <li className='nav-item mobile-auth'>
+                <Link to='/sign_up' className='nav-links' onClick={closeMenu}>
+                  Register
+                </Link>
+                <Link to='/sign_up' className='nav-links' onClick={closeMenu}>
+                  Log In
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Desktop-only right section */}
+          <div className="right-section">
+            <ul className="nav-menu">
+              <li className='nav-item'>
+                <Link to='/upload' className='nav-links'>
+                  Upload
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link to='/games' className='nav-links'>
+                  Games
+                </Link>
+              </li>
+            </ul>
+            <div className="desktop-auth">
+              {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
+              {button && <Button>LOG IN</Button>}
+            </div>
+          </div>
         </div>
       </nav>
     </>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
