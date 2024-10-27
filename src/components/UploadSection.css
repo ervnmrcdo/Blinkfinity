@@ -7,22 +7,26 @@
 
   .container {
     width: 400px;
-    background-color: #fff;
+    background-color: rgba(36, 36, 36, 0.9);
+    justify-content: center;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
+    object-fit: contain;
+    align-items: center;
+    position: relative;
   }
 
   .container h1 {
     font-size: 24px;
-    color: #000;
+    color: #fff;
     margin-bottom: 15px;
   }
 
   .container h2 {
     font-size: 18px;
-    color: #000;
+    color: #fff;
     margin: 15px 0;
   }
 
