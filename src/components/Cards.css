@@ -95,16 +95,10 @@ h1 {
 
 .cards__scroll-button--left {
     left: 0;
-    border-radius: 8px 0 0 8px;
-    -webkit-border-radius: 8px 0 0 8px;
-    -moz-border-radius: 8px 0 0 8px;
 }
 
 .cards__scroll-button--right {
     right: 0;
-    border-radius: 0 8px 8px 0;
-    -webkit-border-radius: 0 8px 8px 0;
-    -moz-border-radius: 0 8px 8px 0;
 }
 
 /* Keep your existing card styles */
