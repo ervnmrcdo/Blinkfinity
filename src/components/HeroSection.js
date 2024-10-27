@@ -3,12 +3,9 @@ import { Button } from './Button'
 import './HeroSection.css'
 import '../App.css'
 
-
-
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='videos/home_bg.mp4' autoPlay loop muted />
       <h1>BLINKFINITY</h1>
       <p>sup</p>
       <div className="hero-btns">
@@ -22,6 +19,6 @@ function HeroSection() {
       </div>
     </div>
   );
-};
+}
 
-export default HeroSection
+export default HeroSection;
