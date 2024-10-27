@@ -3,7 +3,7 @@
  function Blinks(props) {
    return (
      <>
-        <section>
+        <section >
           <h3>Play</h3>
           <figure className='blink-item-pic-wrap'>
           <img src={props.src} alt={props.label} className='blink-item-img' />
