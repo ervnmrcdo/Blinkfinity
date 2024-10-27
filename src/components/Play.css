@@ -55,7 +55,7 @@ h3 {
 
 
 /* Optional: Add responsiveness */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .blinks {
     flex-direction: column;
   }
@@ -67,4 +67,4 @@ h3 {
   .blink-container {
     width: 90%;
   }
-} */
+}
