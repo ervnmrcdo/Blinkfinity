@@ -29,13 +29,6 @@ function Footer() {
             <Link >Instagram</Link>
             <Link >Terms of Service</Link>
           </div>
-          <div className="footer-link-items">
-            <h2>About us</h2>
-            <Link >LinkedIn</Link>
-            <Link >Twitter</Link>
-            <Link >Instagram</Link>
-            <Link >Terms of Service</Link>
-          </div>
         </div>
       </div>
       <section className='social-media'>
