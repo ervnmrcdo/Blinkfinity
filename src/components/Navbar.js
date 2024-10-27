@@ -37,8 +37,8 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/create' className='nav-links' onClick={closeMenu}>
-                Create
+              <Link to='/upload' className='nav-links' onClick={closeMenu}>
+                Upload
               </Link>
             </li>
             <li className='nav-item'>
@@ -52,7 +52,8 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>REGISTER</Button>}
+          {button && <Button >LOG IN</Button>}
         </div>
       </nav>
     </>

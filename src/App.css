@@ -17,8 +17,8 @@
     font-size: 3rem;
   }
   
-  .services {
-    background-image: url('');
+  .rocketblink {
+    background-image: url('../public/images/play_bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
